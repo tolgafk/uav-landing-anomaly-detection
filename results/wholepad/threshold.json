@@ -1,0 +1,11 @@
+{
+    "threshold": 0.014186441898345947,
+    "youden_threshold": 0.014186441898345947,
+    "best_f1_threshold": 0.011655688285827637,
+    "threshold_selection": "fallback_youden_j_statistic",
+    "model": "ssl_encoder_wholepad.pth",
+    "bank_memmap": "memory_bank_zero_margin.dat",
+    "bank_meta": "memory_bank_zero_margin_meta.npz",
+    "roi_pad_ratio": 0.0,
+    "score": "wholepad_1_minus_max_cosine"
+}

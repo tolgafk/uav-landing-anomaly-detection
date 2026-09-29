@@ -1,0 +1,85 @@
+{
+    "dataset": "TEST clean pads + synthetic occlusion anomalies",
+    "pipeline": "grid_hybrid_ssl",
+    "checkpoint": "ssl_encoder_grid_hybrid.pth",
+    "memory_bank": "memory_bank_grid_hybrid.dat",
+    "feature_space": "projector",
+    "grid": "2x2",
+    "roi_pad_ratio": 0.0,
+    "total_samples": 1260,
+    "safe_samples": 630,
+    "unsafe_samples": 630,
+    "test_pad_stats": {
+        "images": 671,
+        "pads_total": 650,
+        "pads_clean": 630,
+        "pads_hv_skip": 0,
+        "pads_small_skip": 20,
+        "pads_oob_skip": 0
+    },
+    "AUROC": 0.7555215419501133,
+    "decision_threshold": 0.14,
+    "youden_threshold": 0.03994131088256836,
+    "best_f1_threshold": 0.02190011739730835,
+    "optimal_threshold": 0.14,
+    "threshold_selection": "json_threshold",
+    "precision": 0.8787878787878788,
+    "recall": 0.09206349206349207,
+    "specificity": 0.9873015873015873,
+    "f1_score": 0.16666666666666666,
+    "accuracy": 0.5396825396825397,
+    "balanced_accuracy": 0.5396825396825398,
+    "confusion_matrix": {
+        "tn": 622,
+        "fp": 8,
+        "fn": 572,
+        "tp": 58
+    },
+    "threshold_metrics": {
+        "json_threshold": {
+            "threshold": 0.14,
+            "precision": 0.8787878787878788,
+            "recall": 0.09206349206349207,
+            "specificity": 0.9873015873015873,
+            "f1_score": 0.16666666666666666,
+            "accuracy": 0.5396825396825397,
+            "balanced_accuracy": 0.5396825396825398,
+            "confusion_matrix": {
+                "tn": 622,
+                "fp": 8,
+                "fn": 572,
+                "tp": 58
+            }
+        },
+        "youden_j_statistic": {
+            "threshold": 0.03994131088256836,
+            "precision": 0.711340206185567,
+            "recall": 0.6571428571428571,
+            "specificity": 0.7333333333333333,
+            "f1_score": 0.6831683168316832,
+            "accuracy": 0.6952380952380952,
+            "balanced_accuracy": 0.6952380952380952,
+            "confusion_matrix": {
+                "tn": 462,
+                "fp": 168,
+                "fn": 216,
+                "tp": 414
+            }
+        },
+        "best_f1_on_synthetic_eval": {
+            "threshold": 0.02190011739730835,
+            "precision": 0.6215596330275229,
+            "recall": 0.8603174603174604,
+            "specificity": 0.47619047619047616,
+            "f1_score": 0.7217043941411452,
+            "accuracy": 0.6682539682539682,
+            "balanced_accuracy": 0.6682539682539683,
+            "confusion_matrix": {
+                "tn": 300,
+                "fp": 330,
+                "fn": 88,
+                "tp": 542
+            }
+        }
+    }
+}

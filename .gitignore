@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+
+# Datasets and generated samples
+data/
+dataset/
+datasets/
+**/images/
+**/labels/
+**/test_augmented/
+**/annotated_videos/
+
+# Model checkpoints and memory banks
+*.pth
+*.pt
+*.ckpt
+*.dat
+*.npz
+**/outputs/
+
+# Local build files; publication PDFs under paper/ remain tracked
+tmp/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

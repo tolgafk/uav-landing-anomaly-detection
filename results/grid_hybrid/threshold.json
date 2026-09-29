@@ -1,0 +1,13 @@
+{
+    "threshold": 0.14,
+    "youden_threshold": 0.03994131088256836,
+    "best_f1_threshold": 0.02190011739730835,
+    "threshold_selection": "json_threshold",
+    "model": "ssl_encoder_grid_hybrid.pth",
+    "bank_memmap": "memory_bank_grid_hybrid.dat",
+    "bank_meta": "memory_bank_grid_hybrid_meta.npz",
+    "grid": "2x2",
+    "roi_pad_ratio": 0.0,
+    "min_obj_intersection_ratio": 0.0,
+    "score": "max_tile_1_minus_max_cosine"
+}

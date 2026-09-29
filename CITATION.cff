@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the accompanying paper."
+title: "Self-Supervised Memory-Bank Anomaly Detection for UAV Landing Pads"
+type: software
+authors:
+  - family-names: "Küçük"
+    given-names: "Tolga Ferhan"
+    email: "kucuktolgaferhan@gmail.com"
+    website: "https://github.com/tolgafk"
+version: 1.0.0
+date-released: 2026-09-29
+abstract: "Code, metric summaries, and IEEE/ACM paper sources for whole-pad and grid-hybrid anomaly detection under synthetic landing-pad occlusions."
+keywords:
+  - UAV
+  - anomaly detection
+  - self-supervised learning
+  - SimCLR
+  - safe landing

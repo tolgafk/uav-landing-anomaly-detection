@@ -1,0 +1,84 @@
+{
+    "dataset": "TEST clean pads + synthetic occlusion anomalies",
+    "pipeline": "wholepad_ssl",
+    "checkpoint": "ssl_encoder_wholepad.pth",
+    "memory_bank": "memory_bank_zero_margin.dat",
+    "feature_space": "encoder",
+    "roi_pad_ratio": 0.0,
+    "total_samples": 1260,
+    "safe_samples": 630,
+    "unsafe_samples": 630,
+    "test_pad_stats": {
+        "images": 671,
+        "pads_total": 650,
+        "pads_clean": 630,
+        "pads_hv_skip": 0,
+        "pads_small_skip": 20,
+        "pads_oob_skip": 0
+    },
+    "AUROC": 0.9236004031242127,
+    "decision_threshold": 0.014186441898345947,
+    "youden_threshold": 0.014186441898345947,
+    "best_f1_threshold": 0.011655688285827637,
+    "optimal_threshold": 0.014186441898345947,
+    "threshold_selection": "fallback_youden_j_statistic",
+    "precision": 0.8469860896445132,
+    "recall": 0.8698412698412699,
+    "specificity": 0.8428571428571429,
+    "f1_score": 0.8582615505090054,
+    "accuracy": 0.8563492063492063,
+    "balanced_accuracy": 0.8563492063492064,
+    "confusion_matrix": {
+        "tn": 531,
+        "fp": 99,
+        "fn": 82,
+        "tp": 548
+    },
+    "threshold_metrics": {
+        "fallback_youden_j_statistic": {
+            "threshold": 0.014186441898345947,
+            "precision": 0.8469860896445132,
+            "recall": 0.8698412698412699,
+            "specificity": 0.8428571428571429,
+            "f1_score": 0.8582615505090054,
+            "accuracy": 0.8563492063492063,
+            "balanced_accuracy": 0.8563492063492064,
+            "confusion_matrix": {
+                "tn": 531,
+                "fp": 99,
+                "fn": 82,
+                "tp": 548
+            }
+        },
+        "youden_j_statistic": {
+            "threshold": 0.014186441898345947,
+            "precision": 0.8469860896445132,
+            "recall": 0.8698412698412699,
+            "specificity": 0.8428571428571429,
+            "f1_score": 0.8582615505090054,
+            "accuracy": 0.8563492063492063,
+            "balanced_accuracy": 0.8563492063492064,
+            "confusion_matrix": {
+                "tn": 531,
+                "fp": 99,
+                "fn": 82,
+                "tp": 548
+            }
+        },
+        "best_f1_on_synthetic_eval": {
+            "threshold": 0.011655688285827637,
+            "precision": 0.8153409090909091,
+            "recall": 0.9111111111111111,
+            "specificity": 0.7936507936507936,
+            "f1_score": 0.8605697151424287,
+            "accuracy": 0.8523809523809524,
+            "balanced_accuracy": 0.8523809523809524,
+            "confusion_matrix": {
+                "tn": 500,
+                "fp": 130,
+                "fn": 56,
+                "tp": 574
+            }
+        }
+    }
+}
